@@ -9,6 +9,7 @@ import NotFound from 'src/components/NotFound';
 import SinglePost from 'src/components/SinglePost';
 import postsData from 'src/data/posts';
 import Header from 'src/components/Header';
+import ScrollToTop from 'src/components/ScrollToTop';
 
 // data, styles et utilitaires
 
@@ -25,6 +26,7 @@ const Blog = () => {
   return (
     <div className="blog">
       <Header />
+      <ScrollToTop />
       <Switch>
         <Route path="/" exact>
           <Posts posts={posts} />

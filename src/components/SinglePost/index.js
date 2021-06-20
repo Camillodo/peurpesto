@@ -14,6 +14,7 @@ const SinglePost = ({ posts }) => {
   return (
     <article className="single-post">
       <h2 className="post-title">{result.title}</h2>
+      <div className="post-banner-container" style={{ background: `center / contain no-repeat  url(${result.banner})` }} />
       <div className="post-text">{ newLineText(result.content)}</div>
     </article>
   );

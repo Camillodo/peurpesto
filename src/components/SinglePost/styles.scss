@@ -2,6 +2,12 @@
 
 .single-post {
   padding: vars.$gutter;
+  width:85%;
+  margin: 0 auto;
+  .post-title{
+    font-size: 3em;
+    text-align: center;
+  }
 }
 .post-text{
   color: vars.$light-color;
@@ -12,3 +18,8 @@
   text-align:justify;
 }
 
+.post-banner-container{
+  height: 300px;
+  width: 500px;
+  margin: 80px auto;
+}

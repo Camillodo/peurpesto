@@ -13,3 +13,26 @@
   width: 80px;
   margin: 0 auto;
 }
+
+.sign-container{
+  &--right-top{
+  @include vars.moonsign;
+  top: 15px;
+  left: 15px;
+  }
+  &--left-top{
+    @include vars.moonsign;
+    top: 15px;
+    right: 15px;
+    }
+    &--right-bottom{
+      @include vars.moonsign;
+      bottom: 15px;
+      left: 15px;
+      }
+      &--left-bottom{
+        @include vars.moonsign;
+        bottom: 15px;
+        right: 15px;
+        }
+}

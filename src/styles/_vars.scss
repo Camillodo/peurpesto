@@ -21,3 +21,9 @@ $title-color: #f7f7f7;
 // Post
 $post-text-color: #f7f7f7;
 $title-font: '18thCentury', sans-serif;
+
+// Mixin
+@mixin moonsign{
+  width:60px;
+  position: fixed;
+}
