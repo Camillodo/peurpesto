@@ -1,0 +1,14 @@
+@use 'src/styles/vars';
+
+.single-post {
+  padding: vars.$gutter;
+}
+.post-text{
+  color: vars.$light-color;
+}
+
+.post-paragraph {
+  margin-bottom: 2em;
+  text-align:justify;
+}
+

@@ -1,0 +1,15 @@
+@use 'reset';
+@use 'vars';
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+background-color: vars.$dark-color;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}

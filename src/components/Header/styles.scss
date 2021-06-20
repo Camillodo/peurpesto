@@ -1,0 +1,15 @@
+@use 'sass:color';
+@use 'src/styles/vars';
+
+.menu {
+  text-align: center;
+  font: '18thCentury', sans-serif;
+  padding: vars.$gutter;
+  color: #FFF;
+  font: 1.7em vars.$title-font;
+}
+
+.link-container{
+  width: 80px;
+  margin: 0 auto;
+}
