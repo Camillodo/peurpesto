@@ -3,6 +3,7 @@
 .posts {
   max-width: 800px;
   margin: vars.$gutter auto;
+  line-height: 1.5;
 
   &-title {
     color: vars.$light-color;
@@ -13,6 +14,12 @@
     text-align: center;
     font-size: 10em;
     margin-bottom: 0.5em;
+    @media (max-width: 769px) {
+      font-size: 7em;
+    }
+    @media (max-width: 515px) {
+      font-size: 4em;
+    }
   }
 
   &-list {

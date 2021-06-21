@@ -3,9 +3,11 @@
 .post {
   width: 100%;
   padding: vars.$gutter;
-
-  @media (min-width: 600px) {
+  @media (min-width: 909px) {
     width: 50%;
+  }
+  @media (max-width: 909px) {
+    margin: 0 10%;
   }
 
   &-title {
@@ -15,31 +17,17 @@
     color: vars.$title-color;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
+    transition: text-shadow 700ms ease;
   }
-
-  &-category {
-    background-color: vars.$primary-color;
-    color: vars.$light-color;
-    display: inline-block;
-    padding: 0.3em 0.7em;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
   &-excerpt {
     margin-top: 0.5rem;
     font-weight: 300;
     color: vars.$post-text-color;
     text-align: justify;
+  }
+  &:hover .post-title {
+    animation: glitch 400ms infinite forwards;
 
-    em {
-      font-style: italic;
-    }
-
-    strong {
-      font-weight: bold;
-    }
   }
 }
 
@@ -47,3 +35,29 @@
   height: 110px;
   width: 100%;
 }
+
+@keyframes glitch{
+  0% {
+    text-shadow: -0.07em 0 red, 0.07em 0 cyan;
+
+  }
+  30%{
+    text-shadow: -0.11em 0 red, 0.11em 0 cyan;
+
+  }
+
+  60%{
+    text-shadow: -0.08em 0 red, 0.08em 0 cyan;
+
+  }
+  80%{
+    text-shadow: -0.11em 0 red, 0.11em 0 cyan;
+
+  }
+  100% {
+    text-shadow: -0.07em 0 red, 0.07em 0 cyan;
+
+  }
+}
+
+

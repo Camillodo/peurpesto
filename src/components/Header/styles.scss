@@ -12,6 +12,9 @@
 .link-container{
   width: 80px;
   margin: 0 auto;
+  & img{
+    animation: rotate 5000ms infinite forwards;
+  }
 }
 
 .sign-container{
@@ -35,4 +38,33 @@
         bottom: 15px;
         right: 15px;
         }
+}
+
+
+
+@keyframes rotate{
+  0% {
+transform: rotate(-10deg)
+  }
+  10%{
+    transform: rotate(20deg)
+
+  }
+
+  20%{
+    transform: rotate(-10deg)
+
+  }
+30%{
+    transform: rotate(10deg)
+
+  }
+  40% {
+    transform: rotate(0deg)
+
+  }
+  100%{
+    transform: rotate(0deg)
+
+  }
 }

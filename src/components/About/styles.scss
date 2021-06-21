@@ -1,0 +1,27 @@
+@use 'src/styles/vars';
+
+
+.about{
+  max-width:400px;
+  margin:12% auto;
+.about-title{
+    font: 3em vars.$title-font;
+    text-transform: uppercase;
+    text-align: center;
+    color: vars.$light-color;
+    margin-bottom: 1em;
+  }
+
+.about-description {
+  text-align:justify;
+  color: vars.$light-color;
+
+  @media (max-width: 710px) {
+    margin: 3%;
+  }
+  @media (max-width: 588px) {
+    line-height: 1.4;
+    margin:4%;
+  }
+}
+}

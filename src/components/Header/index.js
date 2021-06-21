@@ -20,7 +20,8 @@ const Header = () => (
           <img src={logo} alt="logo" />
         </div>
       </NavLink>
-      <NavLink to="/">Homepage</NavLink>
+      <NavLink to="/">Homepage -</NavLink>
+      <NavLink to="/about"> About</NavLink>
     </nav>
   </header>
 );

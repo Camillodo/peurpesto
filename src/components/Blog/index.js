@@ -9,6 +9,7 @@ import NotFound from 'src/components/NotFound';
 import SinglePost from 'src/components/SinglePost';
 import postsData from 'src/data/posts';
 import Header from 'src/components/Header';
+import About from 'src/components/About';
 import ScrollToTop from 'src/components/ScrollToTop';
 
 // data, styles et utilitaires
@@ -18,9 +19,11 @@ import './styles.scss';
 // == Composant
 const Blog = () => {
   const [posts, setPosts] = useState([]);
+  const [postsReady, setPostsReady] = useState(false);
 
   useEffect(() => {
     setPosts(postsData);
+    setPostsReady(true);
   }, []);
 
   return (
@@ -32,7 +35,10 @@ const Blog = () => {
           <Posts posts={posts} />
         </Route>
         <Route path="/post/:slug">
-          <SinglePost posts={posts} />
+          {postsReady && <SinglePost posts={posts} />}
+        </Route>
+        <Route path="/about" exact>
+          <About />
         </Route>
         <Route>
           <NotFound />

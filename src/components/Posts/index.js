@@ -9,7 +9,7 @@ const Posts = ({ posts }) => (
   <main className="posts">
     <h1 className="posts-title">Peur Pesto</h1>
     <div className="posts-list">
-      {posts.map((post) => (
+      {posts.reverse().map((post) => (
         <Post
           key={post.id}
           {...post}
