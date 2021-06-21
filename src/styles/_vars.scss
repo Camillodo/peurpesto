@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "18thCentury";
-  src: url("src/assets/fonts/18thCentury.ttf") format("ttf"),
- }
 
 // Generic
 $primary-color: #e52354;
@@ -20,7 +16,7 @@ $title-color: #f7f7f7;
 
 // Post
 $post-text-color: #f7f7f7;
-$title-font: '18thCentury', sans-serif;
+$title-font: 'Benne', serif;
 
 // Mixin
 @mixin moonsign{
