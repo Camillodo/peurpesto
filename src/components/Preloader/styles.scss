@@ -1,0 +1,16 @@
+@use 'src/styles/vars';
+
+.preloader{
+  min-height:100vh;
+  width: 100%;
+  background-color: vars.$dark-color;
+  animation: appear 1000ms ease;
+}
+
+@keyframes appear{
+  from {
+    opacity: 0;
+  }
+  to { 
+    opacity: 0}
+}

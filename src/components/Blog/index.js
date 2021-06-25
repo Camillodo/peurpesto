@@ -11,6 +11,7 @@ import postsData from 'src/data/posts';
 import Header from 'src/components/Header';
 import About from 'src/components/About';
 import ScrollToTop from 'src/components/ScrollToTop';
+import Preloader from 'src/components/Preloader';
 
 // data, styles et utilitaires
 
@@ -36,6 +37,7 @@ const Blog = () => {
         </Route>
         <Route path="/post/:slug">
           {postsReady && <SinglePost posts={posts} />}
+          {!postsReady && <Preloader />}
         </Route>
         <Route path="/about" exact>
           <About />
