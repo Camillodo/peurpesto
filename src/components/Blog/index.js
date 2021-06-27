@@ -29,23 +29,27 @@ const Blog = () => {
 
   return (
     <div className="blog">
-      <Header />
-      <ScrollToTop />
-      <Switch>
-        <Route path="/" exact>
-          <Posts posts={posts} />
-        </Route>
-        <Route path="/post/:slug">
-          {postsReady && <SinglePost posts={posts} />}
-          {!postsReady && <Preloader />}
-        </Route>
-        <Route path="/about" exact>
-          <About />
-        </Route>
-        <Route>
-          <NotFound />
-        </Route>
-      </Switch>
+      {!postsReady && <Preloader />}
+      {(postsReady) && (
+      <>
+        <Header />
+        <ScrollToTop />
+        <Switch>
+          <Route path="/" exact>
+            <Posts posts={posts} />
+          </Route>
+          <Route path="/post/:slug">
+            <SinglePost posts={posts} />
+          </Route>
+          <Route path="/about" exact>
+            <About />
+          </Route>
+          <Route>
+            <NotFound />
+          </Route>
+        </Switch>
+      </>
+      )}
     </div>
   );
 };
