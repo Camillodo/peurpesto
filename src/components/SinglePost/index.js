@@ -11,7 +11,7 @@ import './styles.scss';
 const SinglePost = ({ posts }) => {
   const { slug } = useParams();
   const newLineText = (text) => (text.split('\n').map((str) => <p className="post-paragraph" key={uuidv4()}>{str}</p>));
-  const result = posts.find((post) => post.slug === slug);
+  const result = posts.find((post) => post.slug == slug);
   return (
     <article className="single-post" id="top">
       <h2 className="post-title">{result.title}</h2>
