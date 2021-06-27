@@ -38,7 +38,7 @@ const Blog = () => {
           <Route path="/" exact>
             <Posts posts={posts} />
           </Route>
-          <Route path="/post/:slug">
+          <Route path="/post/:slug" exact>
             <SinglePost posts={posts} />
           </Route>
           <Route path="/about" exact>
