@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Post from 'src/components/Post';
+import { v4 as uuidv4 } from 'uuid';
 
 import './styles.scss';
 
@@ -11,7 +12,7 @@ const Posts = ({ posts }) => (
     <div className="posts-list">
       {posts.reverse().map((post) => (
         <Post
-          key={post.id}
+          key={uuidv4()}
           {...post}
         />
       ))}
