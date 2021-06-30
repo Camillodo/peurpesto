@@ -5,8 +5,15 @@ body {
 font-family: sans-serif;
 line-height: 1.6;
 background-color: vars.$dark-color;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 scroll-behavior: smooth;
+-ms-overflow-style: none;  
+scrollbar-width: none;
+&::-webkit-scrollbar {
+  display: none;}
 }
+
 
 h1,
 h2,
